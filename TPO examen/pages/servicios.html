@@ -7,36 +7,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/stilos.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
     <title>Stylo White - Estilista profesional</title>
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header"> 
-            <div class="contenedor contenedor-logo-nav">
-                <img src="../assets/Stylowhite.jpg" class="logo" width="100" height="90" alt="Stylo White">
+   <!-- Encabezado -->
+   <header class="header"> 
+    <div class="contenedor contenedor-logo-nav">
+        <img src="../assets/Stylowhite.jpg" class="logo" width="100" height="90" alt="Stylo White">
+        
+        <div>
+            <a href="index.html" class="st">Stylo White</a>
+        </div>
+
+        <!-- Barra de navegación -->
+        <nav class="navegacion"> 
+            <ul class="iconos">
+                <li><a href="https://twitter.com/StyloWhite" target="__blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.facebook.com/stylo.white.1" target="__blank"> <ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="https://www.instagram.com/stylowhite/" target="__blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
                 
-                <!-- Barra de navegación -->
-                <nav class="navegacion"> 
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="acercade.html">Acerca de</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="turnos.html">Turnos</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul> 
+            </ul> 
             
-                </nav>
-            </div>
-    </header>
+            
+            <ul class="botones">
+                <li><a href="../index.html">Inicio</a></li>
+                <li class="dropdown"><a href="pages/servicios.html">Servicios</a>
+                    <div class="dropdown-content">
+                        <a href="#color">Color</a>
+                        <a href="#cortes">Cortes</a>
+                        <a href="#peinados">Peinados</a>
+                        <a href="#look">Look</a>
+                    </div>
+                </li>
+                <li><a href="./turnos.html" target="__blank">Turnos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul> 
+    
+        </nav>
+    </div>
+</header>
      
     <!-- Principal -->
     <main class="main1">
         <section class="container1">
             <div class="color1 element"> 
                 <article> 
-                    <h1> Color </h1>
+                    <h1 id="color"> Color </h1>
                     <img src="../assets/color.jpg" width="400" height="320" alt="Stylo White">
                     <p> El color de tu cabello es la primera impresión.</p>
                 </article> 
@@ -44,15 +65,18 @@
 
             <div class="peinados1 element"> 
                 <article> 
-                    <h1> Peinados </h1>
+                    <h1 id="peinados"> Peinados </h1>
                     <img src="../assets/peinado.jpg" width="400" height="320" " alt="Stylo White">
                     <p> Peinados para todos los momentos importantes de tu vida.</p>
                 </article> 
             </div>
-
-            <div class="cortes1 element"> 
+            
+            <div  class="cortes1 element"> 
+                
                 <article> 
-                    <h1> Cortes </h1>
+                    
+                    <h1 id="cortes"> Cortes </h1>
+                    
                     <img src="../assets/cortes.jpg" width="400" height="320"  alt="Stylo White">
                     <p>Variedad de estilos y cortes.</p>
                 </article> 
@@ -60,8 +84,8 @@
 
             <div class="look1 element"> 
                 <article> 
-                    <h1> Antes/Después </h1>
-                    <img src="../assets/Stylo2.jpg" width="400" height="320"  alt="Stylo White">
+                    <h1 name="look"> Antes/Después </h1>
+                    <img src="../assets/antes-despues.jpg" width="400" height="320"  alt="Stylo White">
                     <p>Cuando decidis cambiar completamente.</p>
                 </article> 
             </div>
@@ -71,8 +95,8 @@
     </main>
 
     <!-- Pie de pagina -->
-    <footer>
-        
+    <footer class="footer">
+        <div>copyright ©2020 Stylo White</div>
     </footer>
 
 </body>

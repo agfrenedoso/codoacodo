@@ -1,53 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/stilos.css">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Stylo White - Estilista profesional</title>
-</head>
-<body>
-    <!-- Encabezado -->
-    <header class="header"> 
-        <div class="contenedor contenedor-logo-nav">
-            <img src="../assets/Stylowhite.jpg" width="100" height="90" alt="Stylo White">
-            
-            <!-- Barra de navegación -->
-            <nav class="navegacion"> 
-                <ul>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="#">Turnos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul> 
-        
-            </nav>
-        </div>
-</header>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="../css/estilos2.css">
+    <title>Stylo White - Turnos</title>
+  </head>
+  <body>
+      <!-- Encabezado -->
+   
  
-<!-- Principal -->
-<main class="main">
+    <h4> Completa el formulario y nos comunicaremos contigo para brindarte un turno</h4>
+    <div class="container bootstrap">
+        <div class="row">
+            <div class="col-4">
+                <form>
+                    <div class="mb-3">
+                        <label for="InputNombre" class="form-label">Nombre </label>
+                        <input type="test" class="form-control" id="nombre" aria-label="Name">
+                        <div id="emailHelp" class="form-text">ej.:Juan Carlos</div>
+                    </div>
+                    
+                   
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">ej.:mimail@mail.com</div>
+                    </div>
+                                   
+                    <div class="fecha mb-3">
+                        <label for="InputFecha" class="form-label">Elija fecha probable del turno</label>
+                        <input type="date" class="fecha" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-labelledby="i25" min="2021-10-01" max="2022-03-01" data-initial-value="">
+                    </div>
+                    
+                    <div class="servicio">
+                        <label for="InputSerivicio" class="form-label">Elija servicio para su turno</label>
+                        <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                 Peinado
+                                </label>
+                        </div>
+     
+                   </div>
+                   
+                   <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                Corte
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Color
+                        </label>
+                    </div>
+
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Cambio de look
+                        </label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="InputCliente" class="form-label">Sos cliente?</label>
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Ya sos Stylo White?">
+                            <datalist id="datalistOptions">
+                                <option value="Cliente">
+                                <option value="No soy cliente">
+                            </datalist>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>    
+            </div>
+        </div>  
+    </div>
+
     <section class="articulos"> 
         <article> 
             <img src="../assets/Stylo.jpg" class="logo" width="220" height="180" alt="Stylo White">
         </article> 
     </section>
+        
 
-    <aside> 
-            
-        </aside>
-    </main>
-
-    <!-- Pie de pagina -->
-    <footer class="footer"> 
-
-    </footer>
-
+    <!--Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <footer class="footer">
+        <div>copyright ©2020 Stylo White</div>
+    </footer>  
 </body>
 </html>

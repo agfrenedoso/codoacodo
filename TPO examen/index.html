@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/stilos.css">
+    <link rel="stylesheet" href="css/estilos2.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <title>Stylo White - Estilista profesional</title>
 </head>
@@ -17,14 +19,33 @@
             <div class="contenedor contenedor-logo-nav">
                 <img src="assets/Stylowhite.jpg" class="logo" width="100" height="90" alt="Stylo White">
                 
+                <div>
+                    <a href="index.html" class="st">Stylo White</a>
+                    
+                </div>
+
                 <!-- Barra de navegación -->
                 <nav class="navegacion"> 
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="./pages/acercade.html">Acerca de</a></li>
-                        <li><a href="pages/servicios.html">Servicios</a></li>
-                        <li><a href="./pages/turnos.html">Turnos</a></li>
-                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <ul class="iconos">
+                        <li><a href="https://twitter.com/StyloWhite" target="__blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                        <li><a href="https://www.facebook.com/stylo.white.1" target="__blank"> <ion-icon name="logo-facebook"></ion-icon></a></li>
+                        <li><a href="https://www.instagram.com/stylowhite/" target="__blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                        
+                    </ul> 
+                    
+                    
+                    <ul class="botones">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li class="dropdown"><a href="pages/servicios.html">Servicios</a>
+                            <div class="dropdown-content">
+                                <a href="#color">Color</a>
+                                <a href="#cortes">Cortes</a>
+                                <a href="#peinados">Peinados</a>
+                                <a href="#look">look</a>
+                            </div>
+                        </li>
+                        <li><a href="./pages/turnos.html" target="__blank">Turnos</a></li> 
+                        <li><a href="pages/contacto.html">Contacto</a></li>
                     </ul> 
             
                 </nav>
@@ -33,8 +54,21 @@
      
     <!-- Principal -->
     <main class="main">
+        <section class="parrafo">
+            <h1>Stylo White</h1>
+            <p >Estilista profesional
+                - peluquería - belleza...<br> 
+                Tu lugar... donde podes venir a ponerte mas bella.<br> 
+                Tenemos los servicios de cortes, color, peinados.<br>  
+                Veni a hacerte ese cambio de look.<br> 
+                Mejorar la salud de tu cabello con baños de crema, nutrición<br> 
+                Hacete ese color que te gusta.<br> 
+            </p>
+        </section>
+        <h1>Servicios</h1>
         <section class="container">
-            <div class="color element"> 
+            
+            <div name="#color" class="color element"> 
                 <article> 
                     <h1> Color </h1>
                     <img src="assets/color.jpg" width="400" height="320" alt="Stylo White">
@@ -42,7 +76,7 @@
                 </article> 
             </div>
 
-            <div class="peinados element"> 
+            <div name="#peinados" class="peinados element"> 
                 <article> 
                     <h1> Peinados </h1>
                     <img src="assets/peinado.jpg" width="400" height="320" " alt="Stylo White">
@@ -50,15 +84,15 @@
                 </article> 
             </div>
 
-            <div class="cortes element"> 
+            <div name="#cortes" class="cortes element"> 
                 <article> 
                     <h1> Cortes </h1>
-                    <img src="assets/cortes.jpg" width="400" height="320"  alt="Stylo White">
+                    <img src="assets/cortes2.jpg" width="400" height="320"  alt="Stylo White">
                     <p>Variedad de estilos y cortes.</p>
                 </article> 
             </div>
 
-            <div class="look element"> 
+            <div name="#look" class="look element"> 
                 <article> 
                     <h1> Antes/Después </h1>
                     <img src="assets/Stylo2.jpg" width="400" height="320"  alt="Stylo White">
@@ -69,25 +103,29 @@
         </section>
 
         <aside class="aside"> 
-            <div class="titulo">
-                <h1>Nos encontras en...</h1>
-                </div>
-            <div class="datos">
-                <p>stylowhite@gmail.com
-                    Calle3 n°105, Ciudad Madero, La Matanza
-                </p>
+            <div class="Datos">
+                <h1>Te esperamos en...</h1>
+                <ul class="datos2">
+                    <li class="contacto"><ion-icon name="location-outline"></ion-icon> Calle3 n°105, Ciudad Madero, La Matanza</a></li>
+                    <li class="contacto"><ion-icon name="at-outline"></ion-icon>
+                         stylowhite@gmail.com</a></li> 
+                    <li class="contacto"><ion-icon name="call-outline"></ion-icon> 1157032174</a></li>
+                <ul>
             </div>
             
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.729932956265!2d-58.4739568!3d-34.700577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf9fafff4dfca16!2sStylo%20White%20(Estilista%20Profesional)!5e0!3m2!1ses-419!2sar!4v1634700506505!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13120.729932956265!2d-58.4739568!3d-34.700577!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbf9fafff4dfca16!2sStylo%20White%20(Estilista%20Profesional)!5e0!3m2!1ses-419!2sar!4v1634700506505!5m2!1ses-419!2sar" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div> 
         
         </aside>
+        
+        <a href="#">Regresar</a>
+        
     </main>
 
     <!-- Pie de pagina -->
-    <footer>
-        
+    <footer class="footer">
+        <div>copyright ©2020 Stylo White</div>
     </footer>
 
 </body>

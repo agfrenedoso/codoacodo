@@ -1,0 +1,239 @@
+body {
+    background-color: #ECECF5;
+    font-family: 'Cairo', sans-serif;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+h1 {
+    padding-left: 2rem;
+  }
+  
+header {
+    background-color: #1f1d1d;
+    border-radius: 5px;
+    margin: 2px 0px 4px 0px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    outline: 2px;
+}
+
+.st {
+    font-family: 'Cairo', sans-serif;
+    font-size: 4rem;
+    width: 100px;
+    height: 100px;
+    animation-name: cambiarColor;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes cambiarColor {
+    from {color: rgb(248, 248, 245); 0.016)}
+    to {color: rgba(255, 255, 0, 0.014);}
+}
+
+.contenedor-logo-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.logo{
+    margin-left:20px;
+    border-radius: 10px;
+}
+
+.iconos {
+    float:top;
+}
+
+.navegacion ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+.navegacion ul li {
+    display: inline-block;
+    
+}
+
+.navegacion ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    transition:all 0.8s linear;
+    border-radius: 5px;
+    flex-grow: initial;
+}
+
+.navegacion ul li a:hover {
+    background-color: gray;
+    animation-iteration-count: infinite;
+}
+li.dropdown {
+    display: inline-block;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main {
+    padding-top:5rem ;
+}
+.parrafo{
+    text-align: center;
+}
+
+.container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap:  10px 10px;
+}
+
+.element{
+     outline: 1px solid #000;
+    height: auto;
+    width: auto;
+    font-size: 2 rem;
+    text-align: center;
+}
+.color {
+    background-color: #d3d3d3;
+    background-image: var (--image1);
+    
+}
+
+.peinados {
+    background-color: #d3d3d3;
+    background-image: var (--image2);
+    
+    }
+
+.cortes {
+    background-color: #d3d3d3;
+    background-image: var (--image3);
+}
+
+.look {
+    background-color: #d3d3d3;
+    background-image: var (--image3);
+}
+
+
+.aside{border-top: double;
+    background-color: darkgrey;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap:  10px 10px;
+    padding-top: 5rem;
+    font-size: 2 rem;
+    text-align: left;
+    padding: 7rem;
+}
+
+.datos2 {
+    list-style: none;
+    list-style-type: none;
+    background-image: var (--image3);
+    
+}
+
+.contacto{
+    margin: 30px 0;
+}
+
+.container bootstrap{
+    background-color: #d6c3c7;
+    text-align: center;  
+    padding-top:10rem ;
+    
+}
+
+.row{
+    border-style: ridge;
+}
+h4{
+    background-color: #446481;
+    text-align: center;
+
+}
+
+.footer {
+    background-color: #1f1d1d;
+    border-radius: 5px;
+    height: 2.2rem;
+    color: whitesmoke;
+    font-size: 1.0rem;
+    font-weight: 1px;
+    text-align:center;
+
+}
+@media screen and (max-width: 1024px) {
+   
+}
+@media screen and (max-width: 860px) {
+    
+    .st{
+        font-size: 2rem;
+    }
+    .container{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 4fr; 
+        gap:  10px 10px;
+    }
+    .aside{border-top: double;
+
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 2fr; 
+}
+
+@media screen and (max-width: 570px) {
+    
+    .st{
+        font-size: 1rem;
+    }
+    .container{
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 4fr; 
+        gap:  10px 10px;
+    }
+    .aside{border-top: double;
+        background-color: darkgrey;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 2fr; 
+    }
+}
+

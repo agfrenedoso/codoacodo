@@ -7,7 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/stilos.css">
+    <link rel="stylesheet" href="../css/estilos2.css">
+    
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/app.js"></script>
+    
 
     <title>Stylo White - Estilista profesional</title>
 </head>
@@ -15,16 +20,35 @@
     <!-- Encabezado -->
     <header class="header"> 
         <div class="contenedor contenedor-logo-nav">
-            <img src="../assets/Stylowhite.jpg" class="logo" width="220" height="180" alt="Stylo White">
+            <img src="../assets/Stylowhite.jpg" class="logo" width="100" height="90" alt="Stylo White">
             
+            <div>
+                <a href="index.html" class="st">Stylo White</a>
+                
+            </div>
+
             <!-- Barra de navegación -->
             <nav class="navegacion"> 
-                <ul>
+                <ul class="iconos">
+                    <li><a href="https://twitter.com/StyloWhite" target="__blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.facebook.com/stylo.white.1" target="__blank"> <ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/stylowhite/" target="__blank"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    
+                </ul> 
+                
+                
+                <ul class="botones">
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="acercade.html">Acerca de</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="turnos.html">Turnos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="dropdown"><a href="./servicios.html">Servicios</a>
+                        <div class="dropdown-content">
+                            <a href="#">Color</a>
+                            <a href="#">Cortes</a>
+                            <a href="#">Peinados</a>
+                            <a href="#">Nutrición</a>
+                        </div>
+                    </li>
+                    <li><a href="./pages/turnos.html" target="__blank">Turnos</a></li> 
+                    <li><a href="pages/contacto.html">Contacto</a></li>
                 </ul> 
         
             </nav>
@@ -35,17 +59,30 @@
 <main class="main">
     <section class="articulos"> 
         <article> 
-            <img src="../assets/Stylo.jpg" class="logo" width="100" height="90" alt="Stylo White">
+            <img src="../assets/Stylo.jpg" class="logo" width="150" height="100" alt="Stylo White">
         </article> 
     </section>
+
+    <aside> 
+        <form name="myForm" action="https://www.w3schools.com/action_page.php" target="__blank" onsubmit="return validateForm()" method="post">
+            Celular/mail: <input type="text" name="fcontacto"><br>
+            Nombre: <input type="text" name="fcoment"> <br>
+            <textarea name="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+      
+    </aside>
+    
+    </main>
 
     <aside class="aside1"> 
         <div class="titulo1">
             <h1>Nos encontras en...</h1>
-            </div>
+        </div>
+        
         <div class="datos1">
-            <p>stylowhite@gmail.com
-                Calle3 n°105, Ciudad Madero, La Matanza
+            <p> Calle3 n°105, <br> Madero, La Matanza <br>
+                stylowhite@gmail.com
             </p>
         </div>
         
@@ -56,8 +93,8 @@
     </aside>
 
     <!-- Pie de pagina -->
-    <footer class="footer"> 
-
+    <footer class="footer">
+        <div>copyright ©2020 Stylo White</div>
     </footer>
 
 </body>
